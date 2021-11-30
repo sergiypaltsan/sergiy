@@ -1,0 +1,68 @@
+< html >
+    < голова >
+        < title > Мой супер крутой лучший сайт </ title >
+        < Ссылка  HREF = " https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css " отн =" таблица стилей " Целостность =" sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3 " crossorigin =" анонимным " >
+        < link  rel = " stylesheet " href = " style.css " >
+    </ голова >
+    < тело >
+        < сценарий >
+            function  calc ( form ) {
+                пусть  k  =  parseFloat ( document . getElementById ( "a" ) . value ) ;
+                пусть  t  =  parseFloat ( document . getElementById ( "b" ) . value ) ;
+                let  result_w  =  ( ( t * t )  +  3 * k  *  Math . cos ( t  -  2 )  /  ( 2  +  Math . sqrt ( 1  +  k * t ) ) )  /  -  Math . абс ( к  -  т ) ;
+                пусть  result_s  =  Math . журнал ( k  -  4 * t )  +  Math . ехр ( 2 * к )  -  т ;
+                документ . getElementById ( "результат_w" ) . значение  =  result_w ;
+                документ . getElementById ( "результат_с" ) . Значение  =  result_s ;
+            }
+        </ скрипт >
+        < центр >
+        < div  class = " shadowbox " >
+            </ br >
+            < форма >
+                < div  class = " container " >
+                    < div  class = " row " >
+                        < div  class = " col-sm " >
+                            k
+                        </ div >
+                        < div  class = " col-sm " >
+                            < input  type = " text " id = a  name = a  class = " inputField " > 
+                        </ div >
+                    </ div >
+                    < div  class = " row " >
+                        < div  class = " col-sm " >
+                            т
+                        </ div >
+                        < div  class = " col-sm " >
+                            < input  type = " text " id = b  name = b  class = " inputField " >
+                        </ div >
+                    </ div >
+                </ div >
+                < центр >
+                </ br >
+                    < Входной  тип = " кнопка " ID =" Кнопка " название =" Кнопка " значение =" Нажмите меня " OnClick =" известково () " стиль =" поле: 10px; ширина: 70%; " >  < бр >
+                </ br >
+                </ center >
+                < div  class = " container " >
+                    < div  class = " row " >
+                        < div  class = " col-sm " >
+                            результат W
+                        </ div >
+                        < div  class = " col-sm " >
+                            < input  type = " text " id = result_w  name = " result " class = " inputField " > 
+                        </ div >
+                    </ div >
+                    < div  class = " row " >
+                        < div  class = " col-sm " >
+                            результат S
+                        </ div >
+                        < div  class = " col-sm " >
+                            < input  type = " text " id = result_s  name = " result " class = " inputField " > 
+                        </ div >
+                    </ div >
+                </ br >
+                </ div >    
+            </ форма >
+        </ div >
+    </ center >
+    </ body >
+</ html >
